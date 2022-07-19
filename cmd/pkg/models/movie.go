@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/ManivelRamu/CMS-Module/pkg/config"
+	"github.com/ManivelRamu/CMS-Module/cmd/pkg/config"
 	"github.com/jinzhu/gorm"
 )
 
@@ -9,10 +9,10 @@ var db *gorm.DB
 
 type Movie struct {
 	gorm.Model
-	Name     string `gorm:""json:"name"`
-	Director string `json:"author"`
-	Rating   int    `json:"rating"`
-	Year     int    `json:"year"`
+	Name     string `json:"name"`
+	Director string `json:"director"`
+	Rating   string `json:"rating"`
+	Year     string `json:"year"`
 }
 
 func init() {

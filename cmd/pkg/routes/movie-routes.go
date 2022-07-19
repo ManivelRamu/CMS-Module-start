@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/ManivelRamu/CMS-Module/pkg/controllers"
+	"github.com/ManivelRamu/CMS-Module/cmd/pkg/controllers"
 	"github.com/gorilla/mux"
 )
 
