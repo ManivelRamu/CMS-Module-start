@@ -11,7 +11,10 @@ import (
 
 func main() {
 	r := mux.NewRouter()
+
 	routes.RegisterMovieRoutes(r)
+
 	http.Handle("/", r)
 	log.Fatal(http.ListenAndServe("localhost:9010", r))
+
 }
